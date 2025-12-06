@@ -44,3 +44,62 @@ Le système complet inclut :
 
 # 🧱 Architecture générale
 
+Mobile (Flutter) <------> Backend API (Spring Boot)
+|--- PostgreSQL
+|--- Redis
+|--- Firebase (OTP + FCM)
+|--- Weather API
+|--- Mobile Money API
+Admin Panel (Next.js) <---|
+
+
+---
+
+# 🛠️ Stack Technique
+
+### Frontend Mobile
+- Flutter (Dart)
+- Provider / Riverpod
+- Firebase Messaging
+
+### Backend
+- Spring Boot 3 (Java 17+)
+- PostgreSQL + PostGIS (optionnel)
+- Redis
+- Flyway (migrations)
+- JWT Auth
+- Firebase Admin SDK
+
+### Admin
+- Next.js 14
+- Tailwind CSS
+- Axios
+
+### Infra
+- Docker & Docker Compose
+- NGINX
+- CI/CD GitHub Actions
+
+---
+
+# 📦 Structure du dépôt
+
+agrismart/
+backend/ # API
+mobile_app/ # App Flutter
+admin/ # Panel Admin
+infra/ # Docker, Nginx, CI
+docs/ # SQL, diagrammes, docs techniques
+README.md
+LICENSE
+.gitignore
+
+
+---
+
+# 🧪 Installation locale
+
+## 1️⃣ Cloner le projet
+```bash
+git clone https://github.com/MJMWALTER20/agrismart.git
+cd agrismart
